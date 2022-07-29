@@ -4,13 +4,30 @@
     padding-bottom: 60px; 
     padding-top: 60px; 
     
-// .footer-container {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: baseline;
-// }
+    
+.footer-container {
+    
+    @media screen and (min-width: 480px) {
+            text-align: center;
+        }
+                @media screen and (min-width: 768px) {
+                    text-align: center;
+                }
+    
+    @media screen and (min-width: 1200px) {
+            display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                text-align: start;
+                padding-left: 15px;
+                padding-right: 15px;
+        }
+}
 .footer-link {
-    margin-bottom: 9px;    
+    margin-bottom: 8px; 
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+        }
 }
 .footer-link:last-child {
     margin-bottom: 0;
@@ -82,8 +99,16 @@
 .social-link {
     margin: 0;
     padding: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+            padding-top: 0;
+            padding-bottom: 0;
+            text-align: start;
+        }
     .h3-foot {
-        margin-top: 12px;
+        
         margin-bottom: 20px;
         margin-left: 70px;
         margin-right: 70px;
@@ -92,12 +117,15 @@
         line-height: 1.14;
         text-transform: uppercase;   
         color: var(--tt-color); 
+        @media screen and (min-width: 1200px) {
+                margin-top: 12px;
+            }
     }
     .social-foot {
         display: flex;
+        justify-content: center;
         padding: 0;
-        margin-top: 20px;
-        margin-left: 0;
+        margin: 0;
     }
     .social-foot .list {
         margin-right: 10px;
@@ -143,7 +171,17 @@
 
 .subscribe {
     .h3-foot-sign {
-        margin-top: 12px;
+        @media screen and (min-width: 480px) {
+                text-align: center;
+            }
+        
+            @media screen and (min-width: 768px) {
+                text-align: center;
+            }
+                @media screen and (min-width: 1200px) {
+                    text-align: start;
+                    margin-top: 12px;
+                }
         margin-bottom: 20px;    
         font-weight:700;
         font-size: 14px;
@@ -151,10 +189,28 @@
         text-transform: uppercase;   
         color: var(--tt-color); 
     }
-    // .form-submit {
-    //     display: flex;
-    //     justify-content: space-between;
-    // }
+    .form-submit {
+        @media screen and (min-width: 1200px) {
+            display: flex;
+                justify-content: space-between;
+        }
+        
+    }
+
+    .submit {
+        @media screen and (min-width: 480px) {
+                text-align: center;
+            }
+        
+            @media screen and (min-width: 768px) {
+                text-align: center;
+            }
+                        @media screen and (min-width: 1200px) {
+                            display: flex;
+                                justify-content: space-between;
+                        }
+                        
+    }
     .form-submit input::placeholder {
         color: var(--fours-text-color);
         font-family: 'Roboto';
@@ -170,11 +226,20 @@
         border-radius: 4px;
         border: 1px solid var(--bf-color);
         background-color: var(--tbg-color);
-        margin-right: 12px;
+        margin: 0;
         padding-left: 16px;
         line-height: 1.25;
         color: var(--ft-color);
         display: inline;
+        @media screen and (min-width: 480px) {
+        min-width: 450px;
+        }
+                @media screen and (min-width: 480px) {
+                    min-width: 358px;
+                }
+                                @media screen and (min-width: 1200px) {
+                                    margin-right: 12px;
+                                }
     }
     .form-submit label {    
         color: rgba(117, 117, 117, 1);
@@ -199,6 +264,10 @@
         justify-content: center;
         text-align: center;
         align-items: center;
+        margin-top: 20px;
+        @media screen and (min-width: 1200px) {
+                margin-top: 0;
+            }
     }
     .button-send .text {
         padding-right: 10px;

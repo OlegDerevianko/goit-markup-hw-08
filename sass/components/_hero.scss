@@ -15,13 +15,13 @@
             width: 100%;
             background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url('../images/mainbg.jpg');
+            url(../images/mainbg.jpg);
         }
     @media screen and (min-width: 768px) {
             width: 100%;
             background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url('../images/mainbg@2x.jpg');
+            url(../images/mainbg@2x.jpg);
         }    
     @media screen and (min-width: 1200px) {        
         padding-top: 200px;
@@ -30,7 +30,7 @@
         height: 600px;
         background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url('../images/mainbg@3x.jpg');
+            url(../images/mainbg@3x.jpg);
     }
     
      
