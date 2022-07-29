@@ -1,0 +1,82 @@
+:root {
+    --pbg-color: #FFFFFF;
+    --primary-background-color: #FFFFFF;
+    --sbg-color: #F5F4FA;
+    --secondary-background-color: #F5F4FA;
+    --tbg-color: #2F303A;
+    --third-background-color: #2F303A;
+    --pt-color: #757575;
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --st-color: #212121;
+    --third-text-color: #ffffff;
+    --tt-color: #ffffff;
+    --accent-color: #2196F3;
+    --ft-color: rgba(255, 255, 255, 0.6);
+    --bb-color: #ECECEC;
+    --bbt-color:#EEEEEE;
+    --icon-primary-fill: #AFB1B8;
+    --icon-background-color: rgba(255, 255, 255, 0.1);
+    --background-text-color: rgba(47, 48, 58, 0.8);
+    --bgo-color: rgba(33, 150, 243, 0.9);
+    --sb-color: #212121;
+    --mb-color: rgba(33, 33, 33, 0.2);
+    --bf-color: rgba(255, 255, 255, 0.3);
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    a {
+        list-style-type: none;
+        text-decoration: none; 
+        font-style: normal;
+    
+    }   
+    address {
+        text-decoration: none;
+        font-style: normal;
+    
+    }
+    li {
+        text-decoration: none;
+        list-style-type: none; 
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin-top: 0;
+    }    
+    body {
+        background: var(--primary-background-color);
+        color: var(--primary-text-color);
+        font-family: 'Roboto';
+        font-size: 14px;
+        letter-spacing: 0.03em;           
+    }    
+    .section {
+        // padding-top: 94px;
+        // padding-bottom: 94px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }

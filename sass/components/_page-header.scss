@@ -1,0 +1,144 @@
+.header {
+    margin-top: 0;
+    border-bottom: 1px solid var(--bb-color);
+    background-color: var(--pbg-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.site-nav {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+    .logo { 
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        color: var(--accent-color);
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: 93px;
+    }    
+    .accent-header {
+        color:#000000;        
+    }
+    .list-force{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        display: flex; 
+    }
+    .list-force :hover,
+    .list-force :focus {
+    color: var(--accent-color);    
+    }    
+    .list-force,
+    .link{
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);        
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .item {
+        margin-right: 50px;
+        padding: 0;
+    }
+    .link {
+        position: relative;
+        color: var(--st-color);              
+    }    
+    .link:hover,
+    .link:focus {    
+        color: var(--accent-color);        
+    }
+    .link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-radius: 2px;       
+        width: 100%;
+        height: 5px;
+        background-color: var(--accent-color);
+        transform: scaleX(0);
+        transition: transform 250ms var(--timing-function);        
+    }
+    .link:hover::after {
+        transform: scaleX(1);        
+    }
+    .link.current {
+        color: var(--accent-color);
+    }
+    .current::after {
+        transform: scaleX(1);        
+    }    
+}
+.address-header {
+    display: flex;
+    align-items: center;
+    .list-force {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        display: flex;               
+    }          
+    .list-force :hover,
+    .list-force :focus {
+        color: var(--accent-color);        
+    }
+    .list-force .item {
+        margin-right: 50px;
+        padding: 0;
+    }
+    .list-force .link,
+    .mail-header, .tel {
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);        
+        padding-top: 32px;
+        padding-bottom: 32px;        
+    }
+    .list-force .mail-icon {
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);     
+        margin-right: 10px;        
+        fill: var(--pt-color);
+    }    
+    .mail-header:hover .mail-icon,
+    .mail-header:focus .mail-icon {
+        fill: var(--accent-color);        
+    }    
+    .mail-header {
+        color: var(--pt-color);  
+        display: flex;
+        justify-content: center;
+        align-items: center;      
+    }    
+    .list-force .tel-icon {
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);          
+        margin-right: 10px;               
+        fill: var(--pt-color);      
+    }
+    .tel:hover .tel-icon,
+    .tel:focus .tel-icon {
+        fill: var(--accent-color);        
+    }    
+    .tel {
+        color: var(--pt-color); 
+        display: flex;
+        justify-content: center;
+        align-items: center;         
+    }
+}
+
