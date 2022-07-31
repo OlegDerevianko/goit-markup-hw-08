@@ -8,11 +8,28 @@
     list-style-type: none;
     color: var(--secondary-text-color);
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    justify-content: baseline;
+    margin-bottom: 40px;
     margin-top: 0;
+    flex-wrap: wrap;
+    @media (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+
+    }
+        @media (min-width: 1200px) {
+            
+            margin-bottom: 50px;
+    
+        }
+    
     &__item {
         margin-right: 8px;
+        margin-bottom: 15px;
+        
+            @media (min-width: 768px) {
+                margin-bottom: 0;
+            }
     }
     &__item:last-child {
         margin-right: 0;
@@ -28,7 +45,8 @@
         border-radius: 4px;
         transition: fill 250ms var(--timing-function), 
         background-color 250ms var(--timing-function),
-        color 250ms var(--timing-function);            
+        color 250ms var(--timing-function);
+                  
     }
     &__button:hover,
     &__button:focus {

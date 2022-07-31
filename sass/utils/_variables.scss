@@ -69,9 +69,24 @@
         max-width: 1200px;
         width: 100%;
         padding-left: 15px;
-            padding-right: 15px;
+        padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
+        @media (min-width: 320px) {
+                max-width: 320px;
+            }
+        
+            @media (min-width: 480px) {
+                max-width: 480px;
+            }
+        
+            @media (min-width: 768px) {
+                max-width: 768px;
+            }
+        
+            @media (min-width: 1200px) {
+                min-width: 1200px;
+            }
         
         
            
