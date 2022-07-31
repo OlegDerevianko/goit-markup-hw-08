@@ -6,7 +6,7 @@
     
     
 .footer-container {
-    
+    text-align: center;
     @media screen and (min-width: 480px) {
             text-align: center;
         }
@@ -220,7 +220,7 @@
         letter-spacing: 0.03em;
     }
     .form-submit input{
-        min-width: 358px;
+        min-width: 280px;
         min-height: 50px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
@@ -234,11 +234,10 @@
         @media screen and (min-width: 480px) {
         min-width: 450px;
         }
-                @media screen and (min-width: 480px) {
-                    min-width: 358px;
-                }
+                
                                 @media screen and (min-width: 1200px) {
                                     margin-right: 12px;
+                                    min-width: 358px;
                                 }
     }
     .form-submit label {    

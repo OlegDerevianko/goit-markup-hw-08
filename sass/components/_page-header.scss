@@ -16,6 +16,10 @@
     align-items: center;
     padding: 0;
     justify-content: center;
+    @media  screen and (min-width: 768px) {
+        display: flex;
+        
+    }
     .logo { 
         font-family: 'Raleway';
         font-weight: 700;
@@ -24,7 +28,11 @@
         color: var(--accent-color);
         padding-top: 24px;
         padding-bottom: 25px;
-        margin-right: 93px;
+        margin-right: 88px;
+        @media (min-width: 1200px) {
+            margin-right: 93px;
+            
+        }
     }    
     .accent-header {
         color:#000000;        
@@ -33,7 +41,21 @@
         margin-top: 0;
         margin-bottom: 0;
         padding: 0;
-        display: flex; 
+        // display: flex;
+        text-align: start;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            
+        }
+            
+        } 
+    }
+    .list {
+        display: none;
+        
+            @media screen and (min-width: 768px) {
+                display: block;
+            }
     }
     .list-force :hover,
     .list-force :focus {
@@ -51,8 +73,10 @@
         margin-right: 50px;
         padding: 0;
     }
+    .item:last-child {margin-right: 0;}
     .link {
         position: relative;
+       
         color: var(--st-color);              
     }    
     .link:hover,
@@ -80,31 +104,54 @@
     .current::after {
         transform: scaleX(1);        
     }    
-}
+
+
 .address-header {
     display: flex;
     align-items: center;
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+        
+    .list-header {
+        @media (max-width: 1200px) {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+
+            
+        }
+    }
     .list-force {
         margin-top: 0;
         margin-bottom: 0;
         padding: 0;
-        display: flex;               
+        display: flex;
+                       
     }          
     .list-force :hover,
     .list-force :focus {
         color: var(--accent-color);        
     }
     .list-force .item {
-        margin-right: 50px;
+        margin-right: 0;
         padding: 0;
+        @media (min-width: 1200px) {
+            margin-right: 30px;
+            
+        }
     }
+    .list-force .item:last-child {margin-right: 0;}
+    
     .list-force .link,
     .mail-header, .tel {
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);        
         padding-top: 32px;
-        padding-bottom: 32px;        
+        padding-bottom: 32px;
+                
     }
     .list-force .mail-icon {
         transition-property: fill;
@@ -121,7 +168,15 @@
         color: var(--pt-color);  
         display: flex;
         justify-content: center;
-        align-items: center;      
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+        @media (min-width: 1200px) {
+            margin-bottom: 0;
+            
+        }
+            
     }    
     .list-force .tel-icon {
         transition-property: fill;
@@ -138,7 +193,9 @@
         color: var(--pt-color); 
         display: flex;
         justify-content: center;
-        align-items: center;         
+        align-items: center; 
+        padding-top: 0;
+            padding-bottom: 0;
     }
 }
 

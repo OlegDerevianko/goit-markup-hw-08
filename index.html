@@ -14,14 +14,14 @@
         <div class="container header-nav">
             <nav class="site-nav">
                 <a href="./index.html" class="logo">Web<span class="accent-header">Studio</span></a>
-                <!-- <ul class="list-force">
+                <ul class="list-force list">
                     <li class="item"><a href="./index.html" class="link current">Студия</a></li>
                     <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
                     <li class="item"><a href="" class="link">Контакты</a></li>
-                </ul> -->
+                </ul>
             </nav>
-            <!-- <address class="address-header">
-                <ul class="list-force">
+            <address class="address-header">
+                <ul class="list-force list-header">
                     <li class="item">                    
                         <a href="mailto:info@devstudio.com" class="mail-header">
                             <svg class="mail-icon" width="16px" height="12px" aria-hidden="true">
@@ -39,12 +39,42 @@
                         </a>
                     </li>
                 </ul>
-            </address>         -->
+            </address>   
+            <button class="mobile__open-menu" type="button" data-mobile-menu-open>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="mobile__open-icon" href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
         
     
     </header>
 	<main>
+        <nav class="mobile__menu is-hidden" data-mobile-menu>
+            <button class="mobile__close-menu" type="button" data-mobile-menu-close>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="mobile__close-icon" href="./images/icons.svg#icon-close2"></use>
+                </svg>
+            </button>
+            <ul class="mobile__list">
+                <li class="mobile__item"><a class="mobile__link current" href="./index.html">Студия</a></li>
+                <li class="mobile__item"><a class="mobile__link" href="./portfolio.html">Портфолио</a></li>
+                <li class="mobile__item"><a class="mobile__link" href="#">Контакты</a></li>
+            </ul>
+            <ul class="mobile__list">
+                <li class="mobile__item">
+                    <a href="mailto:info@devstudio.com" class="mobile__mail">info@devstudio.com</a>
+                </li>
+                <li class="mobile-nav__item"><a href="tel:+380961111111" class="mobile__tel">+38 096 111 11 11</a>
+                </li>
+            </ul>
+            <ul class="mobile__social">
+                <li class="mobile__social-item"><a href="Instagram" class="mobile__social-link ">Instagram</a></li>
+                <li class="mobile__social-item"><a href="Twitter" class="mobile__social-link">Twitter</a></li>
+                <li class="mobile__social-item"><a href="Facebook" class="mobile__social-link">Facebook</a></li>
+                <li class="mobile__social-item"><a href="LinkedIn" class="mobile__social-link">LinkedIn</a></li>
+            </ul>
+        </nav>
 		<section class="hero">
            <div class="hero__container container">
                  <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
@@ -97,7 +127,7 @@
             </ul>
             </div>
         </section>
-		<section class="works section">
+		<section class="works section ">
             <!-- Чем мы занимаемся -->
            
             <div class="works__container container">
@@ -129,44 +159,47 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
 				    <li class="team__card">
-					    <img class="team__img" src="./images/idemyanenko.jpg" alt="Игорь Демьяненко" width="270">                
-					    <div class="team__job">
-                            <h3 class="team__name">Игорь Демьяненко</h3>
-                            <p class="team__profession">Product Designer</p> 
-                            <ul class="social">
-                                <li class="social__list">
-                                    <a href="" class="social__link">
-                                        <svg class="social__icon" width="20px" height="20px" aria-label="link instagram">
-                                            <use href="./images/icons.svg#icon-instagram"></use>
-                                         </svg>
-                                    </a>                                        
-                                </li>
-                                <li class="social__list">
-                                    <a href="" class="social__link">
-                                        <svg class="social__icon" width="20px" height="20px" aria-label="link twitter">
-                                            <use href="./images/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>                                        
-                                </li>
-                                <li class="social__list">
-                                    <a href="" class="social__link">
-                                        <svg class="social__icon" width="20px" height="20px" aria-label="link facebook">
-                                            <use href="./images/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>                                        
-                                </li>
-                                <li class="social__list">
-                                    <a href="" class="social__link">
-                                        <svg class="social__icon" width="20px" height="20px" aria-label="link linkedin">
-                                            <use href="./images/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>                                        
-                                </li>
-                            </ul>
+					    <div class="team__overlay">
+                            <img class="team__img" src="./images/idemyanenko.jpg" alt="Игорь Демьяненко">
+                            <div class="team__job">
+                                <h3 class="team__name">Игорь Демьяненко</h3>
+                                <p class="team__profession">Product Designer</p>
+                                <ul class="social">
+                                    <li class="social__list">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20px" height="20px" aria-label="link instagram">
+                                                <use href="./images/icons.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__list">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20px" height="20px" aria-label="link twitter">
+                                                <use href="./images/icons.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__list">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20px" height="20px" aria-label="link facebook">
+                                                <use href="./images/icons.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__list">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20px" height="20px" aria-label="link linkedin">
+                                                <use href="./images/icons.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
 				    </li>
 				        <li class="team__card">
-					    <img class="team__img" src="./images/orepina.jpg" alt="Ольга Репина" width="270">
+                            <div class="team__overlay">
+					    <img class="team__img" src="./images/orepina.jpg" alt="Ольга Репина" >
 					    <div class="team__job">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="team__profession">Frontend Developer</p>
@@ -201,9 +234,11 @@
                                 </li>
                             </ul>
                         </div>
+                        </div>
 				    </li>
 				    <li class="team__card">
-					    <img class="team__img" src="./images/ntarasov.jpg" alt="Николай Тарасов" width="270">
+                        <div class="team__overlay">
+					    <img class="team__img" src="./images/ntarasov.jpg" alt="Николай Тарасов" >
 					    <div class="team__job">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p class="team__profession">Marketing</p>
@@ -238,9 +273,11 @@
                                 </li>
                             </ul>
                         </div>
+                        </div>
 				    </li>
 				    <li class="team__card">
-					    <img class="team__img" src="./images/mermakov.jpg" alt="Михаил Ермаков" width="270">
+                        <div class="team__overlay">
+					    <img class="team__img" src="./images/mermakov.jpg" alt="Михаил Ермаков" >
 					    <div class="team__job">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="team__profession">UI Designer</p>
@@ -274,6 +311,7 @@
                                     </a>                                        
                                 </li>
                             </ul>
+                        </div>
                         </div>
 				</li>
 			</ul>
@@ -460,6 +498,7 @@
         </div>
     </div>
     </div>
+<script src="./js/menu.js"></script>
 
 	<script src="./js/modal.js"></script>
 
