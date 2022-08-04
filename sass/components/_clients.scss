@@ -1,4 +1,18 @@
 .customers {
+    @media screen and (min-width: 480px) {
+           
+            padding-bottom: 45px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            
+            padding-bottom: 45px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+          
+            padding-bottom: 79px;
+        }
     &__container {
         padding-left: 0;
         padding-right: 0;
@@ -6,12 +20,20 @@
     background-color: var(--primary-background-color);
     &__title {
         font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
+        line-height: 1.18;
         color: var(--secondary-text-color);
-        line-height: 1.17;
+        
         line-height: 100%;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 15px;
+        @media (min-width: 1200px) {
+                font-size: 36px;
+                line-height: 1.17;
+                margin-bottom: 45px;
+        
+        
+            }
     }
     &__list {
         display: flex;
@@ -59,6 +81,7 @@
         
             @media screen and (min-width: 1200px) {
                 flex-basis: 16%;
+                
             }
         
     }
@@ -70,7 +93,7 @@
         border-radius: 4px;
         background-color: var(--primary-background-color);    
         padding: 0;
-        // width: 170px;
+        
         height: 92px;
         cursor: pointer;
         transition: fill, background-color, border  250ms var(--timing-function);
@@ -81,6 +104,12 @@
         &:hover .customers__icon,
         &:focus .customers__icon {   
             fill: var(--accent-color);
+        }
+                @media (min-width: 1200px) {
+                    width: 226px;
+                }
+        @media (min-width: 1200px) {
+            width: 170px;
         }
     }
     &__icon {

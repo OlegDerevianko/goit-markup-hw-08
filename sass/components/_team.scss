@@ -1,16 +1,37 @@
 .team {
+    @media screen and (min-width: 480px) {
+            
+            padding-bottom: 45px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            
+            padding-bottom: 45px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            
+            padding-bottom: 79px;
+        }
     
 
     background-color: var(--sbg-color);
    
     &__title {
         margin-top: 0;
-        margin-bottom: 50px;
+        margin-bottom: 15px;
         font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
+        font-size: 28px;
+            line-height: 1.18;
         text-align: center;
         color: var(--st-color);
+        @media  (min-width: 1200px) {
+            font-size: 36px;
+                    line-height: 1.17;
+                    margin-bottom: 45px;
+        
+            
+        }
     }
     &__list {  
         margin: 0;
@@ -59,8 +80,10 @@
         
             @media screen and (min-width: 1200px) {
                 flex-basis: 25%;
+                max-width: 270px;
             }
         
+            
              
     }
     &__overlay {
@@ -115,12 +138,12 @@
     justify-content: center;        
     }
 }
+
     
 .list1 {
     display: flex;
     margin: 0;
-    width: 44px;
-        height: 44px;
+   
         display: flex;
             justify-content: center;
             align-items: center;
@@ -147,23 +170,39 @@
     background-color: var(--accent-color);
     fill: var(--third-text-color);
 }
-// .link1 {
-//     // display: flex;
-//     // justify-content: center;
-//     // align-items: center;
-//     // border: 1px solid var(--pbg-color);
-//     // border-radius: 50%;    
-//     // background-color: var(--pbg-color);
-//     // cursor: pointer;
-    
-    
-    
-// }
 
+.link1 {
+    width: 44px;
+        height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--pbg-color);
+    border-radius: 50%;    
+    // background-color: var(--pbg-color);
+    cursor: pointer;
     
+    
+    
+}
+.link1:hover,
+.link1:focus {
+    border: 1px solid var(--accent-color);
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    fill: var(--third-text-color);
+}
 .list1:hover .icon1,
 .list1:focus .icon1 {
     fill: var(--tt-color);
+
+}
+
+    
+.link1:hover .icon1,
+.link1:focus .icon1 {
+    fill: var(--tt-color);
+    
     
 }     
 
