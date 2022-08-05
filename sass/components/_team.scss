@@ -1,3 +1,5 @@
+
+
 .team {
     @media screen and (min-width: 480px) {
             
@@ -74,13 +76,13 @@
         
             @media screen and (min-width: 768px) {
                 flex-basis: 50%;
-                max-width: 354px;
+                max-width: 384px;
                 
             }
         
             @media screen and (min-width: 1200px) {
                 flex-basis: 25%;
-                max-width: 270px;
+                // width: 300px;
             }
         
             

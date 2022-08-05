@@ -1261,14 +1261,13 @@ body {
   .team__card {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-    max-width: 354px;
+    max-width: 384px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__card {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
-    max-width: 270px;
   }
 }
 .team__overlay {
@@ -1965,6 +1964,12 @@ body {
   .portfolio {
     padding-top: 94px;
     padding-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
