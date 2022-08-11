@@ -27,11 +27,14 @@
                 <h2 class="visually-hidden">Contacts</h2>
                 <ul class="contacts__list">
                     <li class="contacts__item">
-                        CAFE
+                        <span class="contacts__cafe">CAFE</span>
                         <div class="contacts__location">
-                            <h3 class="contact__city">Chicago</h3>
-                            Fusce ut velit laoreet, tempus arcu molestie vulputate
+                            <h3 class="contacts__city">Chicago</h3>
+                            <p class="contacts__description">
+                                Fusce ut velit laoreet, tempus arcu molestie vulputate
+                            </p>
                         </div>
+                        
                         <div class="contacts__work-time">
                             <span class="contacts__day">Monday - Friday</span>
                             <span class="contacts__time">06:00 AM - 10:00 PM</span>
@@ -46,10 +49,12 @@
 
                     </li>
                     <li class="contacts__item">
-                        FOODTRUCK
+                        <span class="contacts__foodtruck">FOOD TRUCK</span>
                         <div class="contacts__location">
-                            <h3 class="contact__city">Los Angeles</h3>
-                            Fusce ut velit laoreet, tempus arcu molestie vulputate
+                            <h3 class="contacts__city">Los Angeles</h3>
+                            <p class="contacts__description">
+                                Fusce ut velit laoreet, tempus arcu molestie vulputate
+                            </p>
                         </div>
                         <div class="contacts__work-time">
                             <span class="contacts__day">Monday - Friday</span>
@@ -64,10 +69,12 @@
                         </address>
                     </li>
                     <li class="contacts__item">
-                        CAFE
+                        <span class="contacts__cafe">CAFE</span>
                         <div class="contacts__location">
-                            <h3 class="contact__city">New York</h3>
-                            Fusce ut velit laoreet, tempus arcu molestie vulputate
+                            <h3 class="contacts__city">New York</h3>
+                            <p class="contacts__description">
+                                Fusce ut velit laoreet, tempus arcu molestie vulputate
+                            </p>
                         </div>
                         <div class="contacts__work-time">
                             <span class="contacts__day">Monday - Friday</span>
@@ -84,8 +91,15 @@
                     </li>
                 </ul>
                 <div class="buttons">
-                    <button class="buttons__location" type="button">Locations</button>
-                    <button class="buttons__franchise" type="button">Franchise</button>
+                    <button class="buttons__location" type="button"><span class="buttons__text-location">Our Locations</span> 
+                        <svg class="buttons__image-location" width="7px" height="10px" aria-hidden="true"> 
+                        <use href="./images/icons.svg#icon-right-arrow"></use>
+                    </svg></button>
+                    <button class="buttons__franchise" type="button"><span class="buttons__text-franchise">Franchise</span>
+                        <svg class="buttons__image-franchise" width="7px" height="10px" aria-hidden="true"> 
+                            <use href="./images/icons.svg#icon-right-arrow1"></use>
+                        </svg>
+                    </button>
                 </div>
 
             </div>
